@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Creare_Hidefront>
+            <version>1.0.0</version>
+        </Creare_Hidefront>
+    </modules>
+    <global>
+        <models>
+            <hidefront>
+                <class>Creare_Hidefront_Model</class>
+            </hidefront>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <hide_front>
+                        <type>singleton</type>
+                        <class>hidefront/observer</class>
+                        <method>hideFront</method>
+                    </hide_front>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </frontend>
+    <default>
+        <dev>
+            <restrict>
+                <hidefrontend>0</hidefrontend>
+                <message>Frontend veiwing disabled.</message>
+            </restrict>
+        </dev>
+    </default>
+</config>

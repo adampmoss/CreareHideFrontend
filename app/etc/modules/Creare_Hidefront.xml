@@ -1,0 +1,9 @@
+<config>
+    <modules>
+        <Creare_Hidefront>
+            <active>true</active>
+            <codePool>local</codePool>
+	    <version>1.0.0</version>
+        </Creare_Hidefront>
+    </modules>
+</config>
