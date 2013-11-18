@@ -29,7 +29,7 @@
         <dev>
             <restrict>
                 <hidefrontend>0</hidefrontend>
-                <message>Frontend veiwing disabled.</message>
+                <message>Frontend viewing disabled.</message>
             </restrict>
         </dev>
     </default>
