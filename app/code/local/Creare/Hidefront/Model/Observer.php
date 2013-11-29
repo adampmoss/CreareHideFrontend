@@ -7,9 +7,7 @@ class Creare_Hidefront_Model_Observer
         
         if (Mage::getStoreConfig('dev/restrict/hidefrontend'))
         {
-            $ips = explode(",", preg_replace('/\s+/', '', Mage::getStoreConfig('dev/restrict/allow_ips'));
-
-            if (!in_array($_SERVER['REMOTE_ADDR'], $ips))
+            if (!Mage::helper('core')->isDevAllowed() || !Mage::getStoreConfig('dev/restrict/allow_ips'))
             {
                 die(Mage::getStoreConfig('dev/restrict/message'));
             }
