@@ -1,0 +1,14 @@
+{
+    "name": "adampmoss/CreareHideFrontend",
+    "type": "magento-module",
+    "description": "Hide your shop frontend from clients during development, but still allow them access to the admin for store management.": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors": [
+    {
+    	"name": "Adam Moss",
+    	"homepage": "http://www.creare.co.uk",
+    	"role": "Web Developer"
+    }
+    ]
+}
